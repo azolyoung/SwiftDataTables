@@ -102,7 +102,6 @@ public class SwiftDataTable: UIView {
         return collectionView
     }()
     
-    
     public override func layoutSubviews() {
         super.layoutSubviews()
         let searchBarHeight = self.heightForSearchView()
@@ -625,7 +624,7 @@ extension SwiftDataTable {
     }
     
     func shouldShowSearchSection() -> Bool {
-        return true
+        return false
     }
     
     func shouldShowPaginationSection() -> Bool {
@@ -633,11 +632,11 @@ extension SwiftDataTable {
     }
     
     func heightForSectionFooter() -> CGFloat {
-        return 44
+        return 38
     }
     
     func heightForSectionHeader() -> CGFloat {
-        return 44
+        return 38
     }
     
     func widthForRowHeader() -> CGFloat {
@@ -666,7 +665,7 @@ extension SwiftDataTable {
     
     
     func heightForRow(index: Int) -> CGFloat {
-        return 44
+        return 38
     }
     
     func heightOfInterRowSpacing() -> CGFloat {
@@ -690,7 +689,7 @@ extension SwiftDataTable {
         guard self.shouldShowSearchSection() else {
             return 0
         }
-        return 44
+        return 38
     }
     
     func heightForPaginationView() -> CGFloat {
